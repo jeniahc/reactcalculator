@@ -60,7 +60,7 @@ function reducer(state, {type, payload}) {
         currentOperand: null
       }
 
-      if (state.currentOperand == Number.POSITIVE_INFINITY) return {};
+      if (state.currentOperand === Number.POSITIVE_INFINITY) return {};
 
     case ACTIONS.DELETE_DIGIT:
       if (state.overwrite) {
